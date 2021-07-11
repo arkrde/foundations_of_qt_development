@@ -1,6 +1,7 @@
-
 /*
- * <one line to give the library's name and an idea of what it does.>
+ * Foundations of Qt Development
+ * Ch-10
+ * A class with a signal and a slot
  * Copyright (C) 2021  Arnab De <arkrde@gmail.com>
  * 
  * This program is free software: you can redistribute it and/or modify
