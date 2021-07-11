@@ -18,10 +18,23 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include <QDebug>
 #include <QSet>
 #include <QString>
-#include <QDebug>
 
-int main() {
+int
+main() {
     QSet<QString> set;
+    set << "Ada"
+        << "C++"
+        << "Ruby";
+    for (QSet<QString>::ConstIterator b = set.begin(), e = set.end(); b != e;
+         ++b) {
+        qDebug() << *b;
+    }
+    if (set.contains("FORTRAN")) {
+        qDebug() << "FORTRAN is in the set.";
+    } else {
+        qDebug() << "FORTRAN is not in the set.";
+    }
 }
